@@ -4,7 +4,8 @@
     "description": "Laminas module which loads Mezzio ConfigProviders",
     "license": "MIT",
     "require": {
-        "php": "^7.4"
+        "php": "^7.4",
+        "laminas/laminas-config-aggregator": "^1.2"
     },
     "require-dev": {
         "eventjet/coding-standard": "^3.1",
@@ -20,6 +21,11 @@
     "config": {
         "sort-packages": true
     },
+    "extra": {
+        "laminas": {
+            "component": "Eventjet\\LaminasMezzioConfigModule"
+        }
+    },
     "autoload": {
         "psr-4": {
             "Eventjet\\LaminasMezzioConfigModule\\": "src"
@@ -27,16 +33,9 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Eventjet\\Test\\Functional\\LaminasMezzioConfigModule\\": "tests/functional",
             "Eventjet\\Test\\Unit\\LaminasMezzioConfigModule\\": "tests/unit"
         }
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://pack.eventjet.at/"
-        }
-    ],
     "minimum-stability": "stable",
     "scripts": {
         "check": [
