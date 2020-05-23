@@ -7,11 +7,6 @@
         "php": "^7.4",
         "laminas/laminas-config-aggregator": "^1.2"
     },
-    "extra": {
-        "laminas": {
-            "component": "Eventjet\\LaminasMezzioConfigModule"
-        }
-    },
     "require-dev": {
         "eventjet/coding-standard": "^3.1",
         "infection/infection": "^0.16",
@@ -25,6 +20,11 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "extra": {
+        "laminas": {
+            "component": "Eventjet\\LaminasMezzioConfigModule"
+        }
     },
     "autoload": {
         "psr-4": {
